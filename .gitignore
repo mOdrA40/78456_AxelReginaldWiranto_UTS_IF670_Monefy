@@ -1,5 +1,3 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # dependencies
 node_modules/
 
@@ -7,7 +5,7 @@ node_modules/
 .expo/
 dist/
 web-build/
-expo-env.d.ts
+.expo-shared/
 
 # Native
 *.orig.*
@@ -36,3 +34,46 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# Keamanan dan kredensial
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
+firebase-credentials.json
+app.config.local.js
+eas.json
+credentials.json
+
+# File konfigurasi lokal
+app.config.local.js
+eas.local.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+
+# Editor
+.idea
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+.project
+.classpath
+.settings/
+.yarn/
+
+# Build artifacts
+android/
+ios/

@@ -1,0 +1,145 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, TYPOGRAPHY, SPACING, BORDER_RADIUS, SHADOWS } from '../../../constants/theme';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  header: {
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: SPACING.lg,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  backButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: SPACING.md,
+  },
+  headerTitle: {
+    ...TYPOGRAPHY.h3,
+    color: COLORS.white,
+    flex: 1,
+  },
+  profileContainer: {
+    paddingBottom: SPACING.xl,
+    borderBottomLeftRadius: BORDER_RADIUS.lg,
+    borderBottomRightRadius: BORDER_RADIUS.lg,
+    alignItems: 'center',
+    ...SHADOWS.md,
+  },
+  profileImageContainer: {
+    marginTop: SPACING.md,
+    marginBottom: SPACING.lg,
+  },
+  profileImagePlaceholder: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 3,
+    borderColor: 'rgba(255, 255, 255, 0.6)',
+    ...SHADOWS.sm,
+  },
+  profileInitials: {
+    ...TYPOGRAPHY.h1,
+    color: COLORS.white,
+    fontFamily: TYPOGRAPHY.fontFamily.bold,
+  },
+  developerName: {
+    ...TYPOGRAPHY.h2,
+    color: COLORS.white,
+    fontFamily: TYPOGRAPHY.fontFamily.bold,
+    marginBottom: SPACING.xs,
+    textAlign: 'center',
+  },
+  developerLastName: {
+    ...TYPOGRAPHY.h2,
+    color: COLORS.white,
+    fontFamily: TYPOGRAPHY.fontFamily.bold,
+    textAlign: 'center',
+    width: '100%',
+  },
+  developerRole: {
+    ...TYPOGRAPHY.body1,
+    color: 'rgba(255, 255, 255, 0.8)',
+    marginBottom: SPACING.md,
+  },
+  educationContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.sm,
+    borderRadius: BORDER_RADIUS.lg,
+  },
+  educationText: {
+    ...TYPOGRAPHY.caption,
+    color: 'rgba(255, 255, 255, 0.8)',
+    marginLeft: SPACING.xs,
+  },
+  sectionContainer: {
+    padding: SPACING.lg,
+    marginHorizontal: SPACING.lg,
+    marginTop: SPACING.lg,
+    backgroundColor: COLORS.surface,
+    borderRadius: BORDER_RADIUS.lg,
+    ...SHADOWS.sm,
+  },
+  sectionTitle: {
+    ...TYPOGRAPHY.subtitle1,
+    color: COLORS.text,
+    marginBottom: SPACING.md,
+    fontFamily: TYPOGRAPHY.fontFamily.bold,
+  },
+  descriptionText: {
+    ...TYPOGRAPHY.body2,
+    color: COLORS.textSecondary,
+    lineHeight: 22,
+  },
+  socialContainer: {
+    marginTop: SPACING.xs,
+  },
+  socialItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: SPACING.md,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.border,
+  },
+  socialIconContainer: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: COLORS.primary.main,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: SPACING.md,
+  },
+  socialText: {
+    ...TYPOGRAPHY.body2,
+    color: COLORS.text,
+    flex: 1,
+  },
+  footer: {
+    alignItems: 'center',
+    marginVertical: SPACING.xl,
+    paddingBottom: SPACING.xl,
+  },
+  footerText: {
+    ...TYPOGRAPHY.caption,
+    color: COLORS.textSecondary,
+  },
+  footerSubtext: {
+    ...TYPOGRAPHY.caption,
+    color: COLORS.textSecondary,
+    marginTop: SPACING.xs,
+  },
+});
